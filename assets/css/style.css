@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+:root {
+    --black-default: #222;
+    --gray-default: rgba(238, 238, 238, 0.926);
+    --gray: #fff;
+    --gray-hover: #1c181818;
+    --doubt-box: #7A9FF5;
+    --blue-app: #ECF1FD;
+    --red-default: #DF4A4A;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--black-default);
+    background-image: url('../imgs/fundo-background.jpg');
+}
+
+.logo {
+    width: 416px;
+    height: 78px;
+}
+
+.login-box {
+    width: 400px;
+    font-size: 13px;
+    border: 2px solid var(--red-default);
+}
+
+.title-login {
+    background-color: var(--red-default);
+    color: #FFF;
+    width: 396px;
+    height: 36px;
+    padding: 10px;
+    font-weight: 700;
+    font-size: 13px;
+    text-align: center;
+}
+
+.title-login h2 {
+    font-size: 13px;
+}
+
+.connected {
+    width: 396px;
+    height: 40px;
+    background-color: var(--gray-default);
+    font: 12px Tahoma,Verdana,Arial;
+    padding: 4px;
+}
+
+.yes {
+    display: none;
+}
+
+.doubt-box {
+    background-color: var(--gray);
+    width: 396px;
+}
+
+.form-login {
+    width: 312px;
+}
+
+.form-login input {
+    padding: 4px;
+}
+
+.btn-access {
+    border: 2px #DF4A4A solid;
+    background-color: #DF4A4A;
+    color: var(--gray);
+    padding: 8px 16px;
+    margin: 4px;
+    font-weight: 700;
+    width: 87px;
+    height: 35px;
+}
+
+
+.forgot-my-password a {
+    color: var(--black-default);
+    text-decoration: none;
+    padding: 10px;
+}
+
+.forgot-my-password a:hover {
+    background-color: var(--gray-hover);
+}
+
+.doubt-to-access {
+    width: 396px;
+}
+
+.accordion {
+    border: 3px solid var(--doubt-box);
+    border: 5px;
+}
+
+.accordion-item h2 button {
+    background-color: var(--doubt-box);
+    color: var(--blue-app);
+    font-size: 13px;
+    height: 26px;
+}
+
+.accordion-button {
+    background-color: var(--doubt-box) !important;
+    color: var(--gray) !important;
+}
+
+.accordion-body {
+    background-color: var(--blue-app);
+    margin-top: 6px;
+    color: var(--doubt-box);
+    font-size: 13px;
+}
+

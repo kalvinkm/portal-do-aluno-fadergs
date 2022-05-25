@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/imgs/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Portal do Aluno</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row d-flex flex-columm">
+            <div class="col-8 offset-2 d-flex flex-column justify-content-center align-items-center mt-5 py-5">
+                <div class="logo">
+                    <img src="assets/imgs/logo_login.png" alt="logo">
+                </div>
+                <div class="login-box d-flex flex-column mt-3">
+                    <div class="login-head d-flex flex-column">
+                        <div class="title-login align-items-center">
+                            <h2>Login</h2>
+                        </div>
+                        <div class="connected d-flex justify-content-end">
+                            <span>
+                                Manter Conectado
+                                <img src="assets/imgs/manter_conectado_nao.png" alt="nao" id="no" class="no">
+                                <img src="assets/imgs/manter_conectado_sim.png" alt="sim" id="yes" class="yes">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="doubt-box d-flex flex-row">
+                        <div class="security mt-4">
+                            <img src="assets/imgs/security.png" alt="security">
+                        </div>
+                        <div class="form-recaptcha">
+                            <div class="form-login p-2">
+                                <div class="user d-flex flex-column pb-2">
+                                    <label for="">
+                                        Usuário:
+                                    </label>
+                                    <input type="text" name="" id="" placeholder="Usuário">
+                                </div>
+                                <div class="password d-flex flex-column">
+                                    <label for="">
+                                        Senha:
+                                    </label>
+                                    <input type="text" name="" id="" placeholder="Senha">
+                                </div>
+                            </div>
+                            <div class="recaptcha">
+                                <iframe title="reCAPTCHA"
+                                    src="https://www.google.com/recaptcha/api2/anchor?ar=2&amp;k=6LeGVZMUAAAAACGLPLFU5QbZjdcZg_XmJ779Ou8g&amp;co=aHR0cHM6Ly9hY2FkZW1pY29zLmZhZGVyZ3MuZWR1LmJyOjQ0Mw..&amp;hl=pt&amp;v=M-QqaF9xk6BpjLH22uHZRhXt&amp;size=normal&amp;cb=b6n3xg9vk1tp"
+                                    width="304" height="78" role="presentation" name="a-j44pwkfn2xdz" frameborder="0"
+                                    scrolling="no"
+                                    sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe>
+                            </div>
+                            <div class="btn-acc">
+                                <button class="btn-access">
+                                    Acessar
+                                </button>
+                            </div>
+                            <div class="forgot-my-password d-flex justify-content-end">
+                                <a href="#">Esqueci minha senha!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="doubt-to-access mt-3">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item p-0">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Dúvidas para acessar?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div><strong>O login deve ter o seguinte formato:</strong></div>
+                                    <div>
+                                        Utilizar o seu login (número de matrícula sem os zeros a esquerda) acrescido do prefixo "ALU", com a mesma senha utilizada para acesso ao Portal anterior.
+                                    </div>
+                                    <br>
+                                    <div>ex: se o seu número de matrícula é 09999999, o seu usuário de acesso será ALU9999999.</div>
+                                    <br>
+                                    * Utilize o mesmo usuário/senha do <b>EaD</b>, <b>Agendamentos</b> e <br>
+                                    <b>computadores</b> do UniRitter.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+            crossorigin="anonymous"></script>
+
+        <script src="assets/js/script.js"></script>
+</body>
+
+</html>
